@@ -1,0 +1,70 @@
+@use "../abstracts/" as *;
+
+.button{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    width: 15.5rem;
+    background-color: $color-primary;
+    text-transform: uppercase;
+    color: white;
+    font-weight:  900;
+    letter-spacing: 0.2em;
+    font-family: "Big Shoulders";
+    font-size: 1.5rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+    text-decoration: none;
+
+    @media(max-width: 800px){
+       width: 10rem;
+       height: 3rem;
+    }
+
+    &:hover .button__aero{
+        background-color: $color-primary;
+    }
+    
+
+    &:hover .button__paragraph{
+        background-color: $color-secondary;
+    }
+}
+
+.button__aero{
+    flex: 0 0 25%;
+    background-color: $color-secondary;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.button__paragraph{
+    flex: 0 0 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.2em;
+    font-family: "Big Shoulders";
+    font-size: 1.5rem;
+    height: 100%;
+
+    @media(max-width: 800px){
+        font-size: 1rem;
+     }
+}
+
+.button--landing::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: red;
+    z-index: 2;
+}

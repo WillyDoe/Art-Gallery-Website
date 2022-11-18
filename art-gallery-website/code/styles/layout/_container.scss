@@ -1,0 +1,32 @@
+.container{
+    padding: 0 25rem;
+    font-family: sans-serif;
+
+    @media(max-width: 2200px){
+        padding: 0  22.5rem;
+    }
+
+    @media(max-width: 2000px){
+        padding: 0  20rem;
+    }
+
+    @media(max-width: 1800px){
+        padding: 0  15rem;
+    }
+
+    @media(max-width: 1600px){
+        padding: 0  10rem;
+    }
+
+    @media(max-width: 1400px){
+        padding: 0  5rem;
+    }
+
+    @media(max-width: 800px){
+        padding: 0  2.5rem;
+    }
+
+    @media(max-width: 400px){
+        padding: 0  1rem;
+    }
+}
